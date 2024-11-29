@@ -1,0 +1,42 @@
+/* Gaya dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #000000;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #00adb5;
+}
+
+.courses {
+  text-align: center;
+  justify-content: center;
+  width: 1000px;
+  padding-top: 50px;
+  padding-left: 300px;
+  margin: 0;
+}
+
+.course-card {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.course-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.course-card img#img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}

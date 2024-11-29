@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="beranda.css">
+  <link rel="stylesheet" href="umum.css">
+  <link rel="icon" href="gambar/hack.ico" type="image/x-icon">
+  <title>Software Engginer</title>
+</head>
+<body>
+  <header>
+    <div class="logo">SOFTWARE ENGGINER</div>
+    <div class="menu">
+      <b id="hamburger"  onclick="showMenu();">Menu </i></b>
+      <nav id="menu_vertikal">
+          <ul>
+              <li><a id="Beranda">Beranda</a></li>
+              <li><a id="Galeri">Galeri</a></li>
+              <li><a id="sosmed">Sosmed</a></li>
+              <li><a id="struktur">Struktur Kelas</a></li>
+              <li><a id="hub">Hubungi Kami</a></li>
+          </ul>
+      </nav>
+     </div>
+    </header> 
+
+  <section>
+    <div class="hero">
+    <div class="hack"><img src="gambar/topeng.png"></div>
+   <div class="text1">SOFTWARE ENGGINER</div>
+   <div class="text3">> <span id="text-container" ></span>|</div><br>
+    <div class="rpl"><p></p>adalah salah satu bidang studi di dalam dunia ilmu komputer dan <font style="font-style: italic;" color="#40F8FF"><a class="link" id="Artikel">teknologi informasi</a></font><br>
+       yang fokus pada pengembangan, perancangan, pengujian, dan pemeliharaan<br>
+        perangkat lunak dengan pendekatan yang sistematis dan terstruktur.</div>
+        
+        <div class="letak">
+          <button class="cta-button" id="bagian2">Lest'go </button>
+        </div>
+      </div>
+  <div class="hero2" id="hero2">
+    <div class="img">
+      <img src="gambar/foto2.jpg" alt="" srcset="">
+    </div>
+    <div class="text">
+      <h1>Tentang Kami</h1>
+      <p>
+        Rekayasa Perangkat Lunak (Software Engineering) adalah disiplin ilmu yang berfokus pada<br> pengembangan perangkat lunak dengan pendekatan sistematis, terstruktur, dan terkontrol.<br> Ini mencakup semua aspek dari siklus hidup perangkat lunak, mulai dari perencanaan<br> hingga pemeliharaan, dengan tujuan menghasilkan perangkat lunak yang berkualitas,<br> dapat diandalkan, efisien, dan memenuhi kebutuhan pengguna.
+      </p>
+      <div class="button">
+        <button class="btn btn1" id="home">In Class</button>
+        <button class="btn btn2" id="home" onclick="Alert()">Download CV</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 FroxV4</p>
+    <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat dan Ketentuan</a></p>
+</footer>
+
+</body>
+</html>
+<script>
+  function showMenu() {
+          var x = document.getElementById('hamburger').innerHTML;
+          console.log(x);
+          if(x=="Menu.") {
+            
+              console.log("close");
+              document.getElementById('hamburger').innerHTML="Menu";
+              document.getElementById('menu_vertikal').style.display="none";
+     
+          } else {
+              console.log("hamburger");
+              document.getElementById('hamburger').innerHTML="Menu.";
+              document.getElementById('menu_vertikal').style.display="flex";
+
+          }
+          
+      }
+
+      const textElement = document.getElementById('text-container');
+    const textsToDisplay = [
+      "Wellcome!",
+      "XI Software Engginer.",
+      "humanize humans."
+    ];
+
+    let currentTextIndex = 0;
+    let currentCharacter = 0;
+
+    function typeText() {
+      if (currentCharacter < textsToDisplay[currentTextIndex].length) {
+        textElement.textContent += textsToDisplay[currentTextIndex][currentCharacter];
+        currentCharacter++;
+        setTimeout(typeText, 250); // Waktu penundaan antara karakter
+      } else {
+        setTimeout(eraseText, 1000); // Waktu tampilan teks sebelum berganti
+      }
+    }
+
+    function eraseText() {
+      if (currentCharacter > 0) {
+        textElement.textContent = textsToDisplay[currentTextIndex].substring(0, currentCharacter - 1);
+        currentCharacter--;
+        setTimeout(eraseText, 150); // Kecepatan menghapus karakter
+      } else {
+        currentTextIndex = (currentTextIndex + 1) % textsToDisplay.length;
+        setTimeout(typeText, 500); // Waktu sebelum memulai pengetikan ulang
+      }
+    }
+
+    typeText(); // Memulai efek pengetikan saat halaman dimuat
+
+    // Menggunakan JavaScript untuk mengarahkan pengguna ke URL tertentu saat tombol diklik
+  document.getElementById("Beranda").addEventListener("click", function() {
+    window.location.href = "Beranda.html";
+  });
+  document.getElementById("Galeri").addEventListener("click", function() {
+    window.location.href = "galeri.html";
+  });
+  document.getElementById("hub").addEventListener("click", function() {
+    window.location.href = "hub.html";
+  });
+  document.getElementById("sosmed").addEventListener("click", function() {
+    window.location.href = "sosmed.html";
+  });
+  document.getElementById("struktur").addEventListener("click", function() {
+    window.location.href = "struktur.html";
+  });
+  document.getElementById("Artikel").addEventListener("click", function() {
+    window.location.href = "https://sistem-komputer-s1.stekom.ac.id/informasi/baca/Teknologi-InformasiTujuan-dan-Fungsi-Teknologi-Informasi-menurut-parapakar/5375101199659357bc43a60ad77406889b2597fd";
+  });
+  document.getElementById("bagian2").addEventListener("click", function() {
+    window.location.href = "#hero2";
+  });
+  document.getElementById("home").addEventListener("click", function() {
+    window.location.href = "#";
+  });
+
+  function Alert()
+  {
+    alert ("maaf belum tersedia ... !");
+  }
+  </script>
+
+

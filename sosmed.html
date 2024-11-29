@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosial Media</title>
+    <link rel="icon" href="gambar/hack.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sosmed.css">
+    <link rel="stylesheet" href="umum.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SOFTWARE ENGINER</div>
+        <div class="menu">
+          <b id="hamburger"  onclick="showMenu();">Menu </i></b>
+          <nav id="menu_vertikal">
+              <ul>
+                  <li><a id="Beranda">Beranda</a></li>
+                  <li><a id="Galeri">Galeri</a></li>
+                  <li><a id="sosmed">Sosmed</a></li>
+                  <li><a id="struktur">Struktur Kelas</a></li>
+                  <li><a id="hub">Hubungi Kami</a></li>  
+              </ul>
+          </nav>
+         </div>
+        </header> 
+      <main>
+        <section>
+                <img src="gambar/hack.png" alt="profil">
+                <h1>@Software-Enginer</h1>
+        </section>
+        <div id="center">
+            <button class="btn">
+                <a id="ig" target="_blank" rel="nooperner nooperner">
+                    Instagram
+                </a>
+            </button>
+            <button class="btn">
+                <a id="fb" target="_blank" rel="nooperner nooperner">
+                    Facebook
+                </a>
+            </button>
+            <button class="btn">
+                <a id="yt" target="_blank" rel="nooperner nooperner">
+                    Youtube
+                </a>
+            </button>
+        </div>
+        <div id="rest"></div>
+      </main>  
+      <footer>
+        <p>&copy; 2023 FroxV4</p>
+        <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat dan Ketentuan</a></p>
+    </footer>
+</body>
+</html>
+<script>
+    function showMenu() {
+          var x = document.getElementById('hamburger').innerHTML;
+          console.log(x);
+          if(x=="Menu.") {
+            
+              console.log("close");
+              document.getElementById('hamburger').innerHTML="Menu";
+              document.getElementById('menu_vertikal').style.display="none";
+     
+          } else {
+              console.log("hamburger");
+              document.getElementById('hamburger').innerHTML="Menu.";
+              document.getElementById('menu_vertikal').style.display="flex";
+
+          }
+          
+      }
+
+      // Menggunakan JavaScript untuk mengarahkan pengguna ke URL tertentu saat tombol diklik
+  document.getElementById("Beranda").addEventListener("click", function() {
+    window.location.href = "Beranda.html";
+  });
+  document.getElementById("Galeri").addEventListener("click", function() {
+    window.location.href = "galeri.html";
+  });
+  document.getElementById("hub").addEventListener("click", function() {
+    window.location.href = "hub.html";
+  });
+  document.getElementById("sosmed").addEventListener("click", function() {
+    window.location.href = "sosmed.html";
+  });
+  document.getElementById("struktur").addEventListener("click", function() {
+    window.location.href = "struktur.html";
+  });
+  document.getElementById("ig").addEventListener("click", function() {
+    window.location.href = "https://www.instagram.com/xi.erpeel/";
+  });
+  document.getElementById("fb").addEventListener("click", function() {
+    window.location.href = "https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr";
+  });
+  document.getElementById("yt").addEventListener("click", function() {
+    window.location.href = "https://youtu.be/99vLQUTmmNE?si=PyHI_whjM2FeuEkw";
+  });
+</script>

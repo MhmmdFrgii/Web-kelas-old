@@ -1,0 +1,51 @@
+/* Gaya dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #038a9f;
+  max-height: 688px;
+  min-height: 100vh;
+}
+
+/* Bagian Kursus */
+.courses {
+  text-align: center;
+  justify-content: center;
+  padding: 10rem;
+  padding-top: 130px;
+}
+
+.course-card {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.course-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  font-family: Arial, sans-serif;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+.course-card img#img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  height: 800px;
+  width: 60%;
+}
+
+

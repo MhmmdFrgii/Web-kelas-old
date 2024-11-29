@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hub.css">
+    <link rel="stylesheet" href="umum.css">
+    <link rel="icon" href="gambar/hack.ico" type="image/x-icon">
+    <title>Hubungi Kami</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo" >SOFTWARE ENGINER</div>
+        <div class="menu">
+            <b id="hamburger"  onclick="showMenu();">Menu </i></b>
+            <nav id="menu_vertikal">
+                <ul>
+                    <li><a id="Beranda">Beranda</a></li>
+                    <li><a id="Galeri">Galeri</a></li>
+                    <li><a id="sosmed">Sosmed</a></li>
+                    <li><a id="struktur">Struktur Kelas</a></li>
+                    <li><a id="hub">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+           </div>
+        </header>
+    <div class="container">
+        <div class="card-container">
+            <div class="left">
+                <div class="left-container">
+                    <h2>Tentang Kami</h2>
+                    <p>Software Enginer adalah sebuah jurusan yang mempelajari teknologi informasi dan telekomunikasi.</p>
+                    <br>
+                    <p>Berikan pendapat anda tentang kelas kami<br>
+                    XI Rekayasa Perangkat Lunak.</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-container">
+                    <form action="">
+                        <h2 class="lg-view">Hubungi Kami</h2>
+                        <input type="text" placeholder="Nama">
+                        <input type="email" placeholder="Alamat Email">
+                        <input type="text" placeholder="Perusahaan" autocomplete="off">
+                        <input type="phone" placeholder="Telepone" autocomplete="off">
+                        <textarea rows="10" placeholder="Pesan"></textarea>
+                        <button>Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function showMenu() {
+            var x = document.getElementById('hamburger').innerHTML;
+            console.log(x);
+            if(x=="Menu.") {
+              
+                console.log("close");
+                document.getElementById('hamburger').innerHTML="Menu";
+                document.getElementById('menu_vertikal').style.display="none";
+       
+            } else {
+                console.log("hamburger");
+                document.getElementById('hamburger').innerHTML="Menu.";
+                document.getElementById('menu_vertikal').style.display="flex";
+  
+            }
+            
+        }
+
+        // Menggunakan JavaScript untuk mengarahkan pengguna ke URL tertentu saat tombol diklik
+ document.getElementById("Beranda").addEventListener("click", function() {
+    window.location.href = "Beranda.html";
+  });
+  document.getElementById("Galeri").addEventListener("click", function() {
+    window.location.href = "galeri.html";
+  });
+  document.getElementById("hub").addEventListener("click", function() {
+    window.location.href = "hub.html";
+  });
+  document.getElementById("sosmed").addEventListener("click", function() {
+    window.location.href = "sosmed.html";
+  });
+  document.getElementById("struktur").addEventListener("click", function() {
+    window.location.href = "struktur.html";
+  });
+    </script>
+  

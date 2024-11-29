@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header dan navigasi */
+header {
+  background-color: #126e82;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 20px black;
+}
+
+.logo {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  padding-right: 70px;
+  padding-top: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: none;
+  clear: both;
+  width: 0;
+  background-color: #eee;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  cursor: pointer;
+  transition: 0.5s ease;
+  display: block;
+  text-decoration: none;
+  margin: 5px;
+  padding: 14px 20px;
+  color: rgb(255, 254, 254);
+  background-color: #000000;
+  border-radius: 5px;
+  width: 140px;
+  text-align: left;
+}
+nav ul li a:hover {
+  transform: translateY(-2px);
+  color: #000000;
+  background-color: #fbfbfb;
+}
+#hamburger {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  width: 120px;
+  float: left;
+  padding: 7px 10px;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+#hamburger:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  background-color: #000000;
+}
+
+.menu {
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+footer {
+  background-color: #333; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  padding: 20px 0; /* Padding atas dan bawah 20px, kiri dan kanan 0 */
+  text-align: center; /* Teks berada di tengah */
+  font-size: 16px;
+}
+
+/* Gaya tautan dalam footer */
+footer a {
+  color: #ff5733; /* Warna tautan */
+  text-decoration: none; /* Hapus garis bawah pada tautan */
+  transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+/* Efek hover pada tautan dalam footer */
+footer a:hover {
+  color: #ff4500; /* Ganti warna tautan saat dihover */
+}
